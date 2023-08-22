@@ -6,7 +6,7 @@ import useWordEngine from './useWordEngine';
 
 export type State = 'start' | 'run' | 'finish';
 
-const NUMBER_OF_WORDS = 10;
+const NUMBER_OF_WORDS = 20;
 const COUNTDOWN_SECONDS = 15;
 
 const useGameEngine = () => {

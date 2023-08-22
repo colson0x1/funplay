@@ -23,7 +23,7 @@ const App = () => {
         onRestart={restart}
       />
       <RaceStats
-      state={state}
+        state={state}
         className="mt-10"
         errors={errors}
         accuracyPercentage={calculateAccuracyPercentage(errors, totalTyped)}
@@ -35,14 +35,18 @@ const App = () => {
 
 const WordsContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative text-3xl max-w-xl leading-relaxed break-all mt-3">
+    <div className="relative text-4xl max-w-5xl leading-relaxed mt-3">
       {children}
     </div>
   );
 };
 
 const GeneratedWords = ({ words }: { words: string }) => {
-  return <div className="text-slate-300">{words}</div>;
+  return (
+    <div className="text-slate-400" style={{ wordBreak: 'break-word' }}>
+      {words}
+    </div>
+  );
 };
 
 const CountdownTimer = ({ timeLeft }: { timeLeft: number }) => {
