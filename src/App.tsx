@@ -35,7 +35,7 @@ const App = () => {
 
 const WordsContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative text-4xl max-w-5xl leading-relaxed mt-3">
+    <div className="relative text-4xl max-w-4xl leading-relaxed mt-3">
       {children}
     </div>
   );
@@ -43,14 +43,14 @@ const WordsContainer = ({ children }: { children: React.ReactNode }) => {
 
 const GeneratedWords = ({ words }: { words: string }) => {
   return (
-    <div className="text-slate-400" style={{ wordBreak: 'break-word' }}>
+    <div className="text-slate-600" style={{ wordBreak: 'break-word' }}>
       {words}
     </div>
   );
 };
 
 const CountdownTimer = ({ timeLeft }: { timeLeft: number }) => {
-  return <h2 className="text-slate-400 font-medium">Time: {timeLeft}</h2>;
+  return <h2 className="text-slate-600 font-medium">Time: {timeLeft}</h2>;
 };
 
 export default App;

@@ -39,8 +39,8 @@ const Character = ({
   const isWhiteSpace = expected === ' ';
   return (
     <span className={cn({ 
-      'text-green-600': isCorrect && !isWhiteSpace,
-      "text-red-600": isCorrect && !isWhiteSpace,
+      'text-amber-600': isCorrect && !isWhiteSpace,
+      "text-red-500": isCorrect && !isWhiteSpace,
       "bg-red-500/50": !isCorrect && !isWhiteSpace 
       })}>
       {expected}

@@ -25,7 +25,7 @@ const RaceStats = ({
 
   return (
     <motion.ul
-      className={`flex flex-col items-center text-slate-50 space-y-3 ${className}`}
+      className={`flex flex-col items-center text-black space-y-3 ${className}`}
     >
       <motion.li
         initial={initial}
